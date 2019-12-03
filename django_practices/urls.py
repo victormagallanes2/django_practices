@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
 from rest_framework_jwt.views import obtain_jwt_token
-from django_private_chat import urls as django_private_chat_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,8 +30,6 @@ urlpatterns = [
     url(r'^', include('django_practices.chart.urls')),
     url(r'^', include('django_practices.inlineform.urls')),
     url(r'^', include('django_practices.usercustom.urls')),
-    url(r'^', include('django_practices.chat.urls')),
-    url(r'^', include('django_private_chat.urls')),   
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^api-token-auth/', obtain_jwt_token),    
 ]

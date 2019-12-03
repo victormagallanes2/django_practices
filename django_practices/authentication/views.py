@@ -1,4 +1,4 @@
-from django_modules.usercustom.models import User
+from django_practices.usercustom.models import User
 from django.contrib.auth import login, logout
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import AuthenticationForm

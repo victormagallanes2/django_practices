@@ -1,11 +1,24 @@
-{% extends "base.html" %}
+{% extends "base_dashboard.html" %}
 {% block content %}
-<h5>Urls</h5>
-<ul>
-  <li>productlist/</li>
-  <li>product/create/</li>
-  <li>product/detail/1</li>
-  <li>product/update/2</li>
-  <li>product/delete/3</li>
-</ul>
+  {% include "sub_menu_configuration.html" %}
+    <div class="contenido">
+		<center>
+		<br>
+		<br>
+		<h5>Urls</h5>
+		<ul>
+		  <li>api-token-auth/</li>
+		  <li>productlist/</li>
+		  <li>product/create/</li>
+		  <li>product/detail/{pk}></li>
+		  <li>product/update/{pk}></li>
+		  <li>product/delete/{pk}></li>
+		  <li>user/list/</li>
+		  <li>user/create/</li>
+		  <li>user/detail/{pk}></li>
+		  <li>user/update/{pk}></li>
+		  <li>user/delete/{pk}></li>
+		</ul>
+	    </center>
+	   </div>
 {% endblock %}

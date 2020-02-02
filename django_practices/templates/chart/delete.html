@@ -1,5 +1,8 @@
-{% extends "base.html" %}
+{% extends "base_dashboard.html" %}
 {% block content %}
+  {% include "sub_menu_configuration.html" %}
+    <div class="contenido">
+		<center>
 	<form method="post">{% csrf_token %}
 	    ¿Estás seguro que deseas borrar el curso "{{ object }}"?
 	    <br>
@@ -8,4 +11,6 @@
 	<p>
 	    <a href="{% url "list_course" %}">Regresar</a>
 	</p>
+	</center>
+</div>
 {% endblock %}

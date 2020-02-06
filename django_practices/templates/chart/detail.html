@@ -10,9 +10,9 @@
 	    <a href="{% url "chartlist_view" %}">Regresar</a>
 	</p>
 	</center>
-</div>
-  {{ div | safe }}
 
+  {{ div | safe }}
+</div>
   <script src="{% static "js/bokeh-0.13.0.min.js" %}"></script>
   <script src="{% static "js/bokeh-widgets-0.13.0.min.js" %}"></script>
   {{ script | safe }}

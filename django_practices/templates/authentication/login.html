@@ -1,14 +1,8 @@
-<!--{% block title %}Login{% endblock %}-->
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Login</title>
-	</head>
-	<body>
-<!--login modal-->
+{% extends "base_dashboard.html" %}
+{% block content %}
+  {% include "sub_menu_configuration.html" %}
+    <div class="contenido">
+    <center>
 <center>
 {% if mensaje %}
 <div class="alert alert-danger">
@@ -43,12 +37,13 @@
           <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
 		  </div>	
       </div>
-      <a href="{% url 'view_singup' %}">Registrarse</a>
+      <a href="#">Registrarse</a>
       <a href="{% url 'password_reset' %}">Olvide contraseña</a>
   </div>
   </div>
 </div>
 </center>
 	<!-- script references -->
-	</body>
-</html>
+</center>
+     </div>
+{% endblock %}

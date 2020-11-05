@@ -6,6 +6,6 @@ django-wkhtmltopdf-3.3.0
 python-dotenv==0.13.0
 bokeh==0.13.0
 celery==4.2.1
-Pillow==5.2.0
+Pillow==7.1.0
 redis==2.10.6
 

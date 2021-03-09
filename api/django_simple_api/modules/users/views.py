@@ -15,9 +15,8 @@ from rest_framework.generics import UpdateAPIView
 from rest_framework.generics import RetrieveAPIView
 from rest_framework.generics import DestroyAPIView
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 
-
-# Api model User
 
 class UserListAPI(ListAPIView):
     serializer_class = UserListSerializer

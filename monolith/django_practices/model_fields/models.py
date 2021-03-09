@@ -9,7 +9,7 @@ class User(models.Model):
     picture = models.ImageField(upload_to='avatars/', blank=True, null=True)
     phone = PhoneNumberField(blank=True, null=False)
     about_me = models.TextField(max_length=400, blank=True)
-    country = models.ForeignKey(Country, on_delete=True, blank=True, null=True)
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, blank=True, null=True)
     web_site = models.URLField(max_length=250, blank=True)
     twitter = models.CharField(max_length=32, blank=True)
     want_offers = models.BooleanField(default=True)
